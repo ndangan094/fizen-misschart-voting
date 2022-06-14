@@ -1,14 +1,18 @@
-import React from "react";
-import { Link,useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 function Home() {
     const navigate = useNavigate();
+    const query = new URLSearchParams(location.search);
+
+
+    const [claim, setClaim] = useState(query.get("claim"));
     return (
-        <div className="flex flex-col relative max-w-[500px] select-none">
+        <div className="flex flex-col relative max-w-[500px] select-none  mx-auto">
             <div className="flex flex-row fixed top-0 max-w-[500px] w-full bg-white justify-between py-5 px-4">
-                <img onClick={()=>navigate(-1)} className="cursor-pointer" src="/assets/back.svg" alt="Back" />
+                <img onClick={() => navigate(-1)} className="cursor-pointer" src="/assets/back.svg" alt="Back" />
                 <p className="font-medium text-lg">FiCafe Event</p>
-                <img className="cursor-pointer" src="/assets/cancel.svg" alt="Cancel" />
+                <img onClick={()=>{FiToken.postMessage({type:"close"})}} className="cursor-pointer" src="/assets/cancel.svg" alt="Cancel" />
             </div>
             <div className="flex flex-col pt-[68px]">
                 <img src="/assets/fi-food-banner.png" alt="Banner" />
@@ -29,9 +33,11 @@ function Home() {
                         NOW! Coffee and gas fees are on us!
                     </span>
                     <div className="h-6" />
-                    <Link to="/captcha" className="w-full bg-[#500EC1] h-[44px] rounded-3xl text-white font-medium text-center items-center justify-center flex">
+                    {claim == "true" ? <button className="w-full bg-[#8089A9] h-[44px] rounded-3xl text-white font-medium text-center items-center justify-center flex">
                         <span>Claim  <img className="inline" src="/assets/fi-logo.svg" alt="logo-fi" /> 10 FiCafe tokens</span>
-                    </Link>
+                    </button> : <Link to={`/captcha?accountName=${ query.get("accountName")}&address=${ query.get("address")}`} className="w-full bg-[#500EC1] h-[44px] rounded-3xl text-white font-medium text-center items-center justify-center flex">
+                        <span>Claim  <img className="inline" src="/assets/fi-logo.svg" alt="logo-fi" /> 10 FiCafe tokens</span>
+                    </Link>}
                     <div className="h-10" />
                     <div className="flex w-full items-center justify-center">
                         <img className="w-[216px] h-[204px] " src="/assets/coffee.png" alt="Coffee" />
