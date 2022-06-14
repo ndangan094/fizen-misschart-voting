@@ -12,7 +12,7 @@ function Home() {
             <div className="flex flex-row fixed top-0 max-w-[500px] w-full bg-white justify-between py-5 px-4">
                 <img onClick={() => navigate(-1)} className="cursor-pointer" src="/assets/back.svg" alt="Back" />
                 <p className="font-medium text-lg">FiCafe Event</p>
-                <img onClick={()=>{FiToken.postMessage({type:"close"})}} className="cursor-pointer" src="/assets/cancel.svg" alt="Cancel" />
+                <img onClick={()=>{top.postMessage({type:"close"})}} className="cursor-pointer" src="/assets/cancel.svg" alt="Cancel" />
             </div>
             <div className="flex flex-col pt-[68px]">
                 <img src="/assets/fi-food-banner.png" alt="Banner" />

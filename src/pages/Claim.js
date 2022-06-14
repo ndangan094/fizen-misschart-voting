@@ -21,7 +21,7 @@ const Claim = () => {
                         <p>Account 1 (0x0742...c086)</p>
                     </div>
                     <div className="h-14" />
-                    <button onClick={() => { FiToken.postMessage('sendAPI'); }} className="flex relative justify-center items-center max-w-[186px] mx-auto">
+                    <button onClick={() => {top.postMessage('sendAPI'); }} className="flex relative justify-center items-center max-w-[186px] mx-auto">
                         <p className="absolute font-medium">Claim 10 FiCafe tokens</p>
                         <img src="/assets/claim.svg" alt="claim" />
                     </button>
