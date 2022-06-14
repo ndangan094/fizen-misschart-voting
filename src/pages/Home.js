@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link, useNavigate,  } from "react-router-dom";
 
 function Home() {
     const navigate = useNavigate();
     const query = new URLSearchParams(location.search);
 
 
-    const [claim, setClaim] = useState(query.get("claim"));
+    const [claim, setClaim] = useState();
+    setClaim(query.get("claim"))
     return (
         <div className="flex flex-col relative max-w-[500px] select-none  mx-auto">
             <div className="flex flex-row fixed top-0 max-w-[500px] w-full bg-white justify-between py-5 px-4">
