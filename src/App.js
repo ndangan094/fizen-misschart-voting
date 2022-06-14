@@ -1,12 +1,17 @@
+import Captcha from "pages/Captcha";
+import Home from "pages/Home";
 import React from "react";
+import { BrowserRouter,Routes,Route } from "react-router-dom";
 import 'styles/App.css';
 
 function App() {
   return (
-    <div className="App bg-red-200">
-      <p className="text-red-500 font-bold">prop</p>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />}/>
+      <Route path="/captcha" element={<Captcha />}/>
+    </Routes>
+  </BrowserRouter>
   );
 }
-
 export default App;
