@@ -1,5 +1,6 @@
 import Captcha from "pages/Captcha";
 import Claim from "pages/Claim";
+import Event from "pages/Event";
 import Home from "pages/Home";
 import React from "react";
 import { BrowserRouter,Routes,Route } from "react-router-dom";
@@ -12,6 +13,7 @@ function App() {
       <Route path="/" element={<Home />}/>
       <Route path="/captcha" element={<Captcha />}/>
       <Route path="/claim" element={<Claim />}/>
+      <Route path="/event" element={<Event />}/>
     </Routes>
   </BrowserRouter>
   );

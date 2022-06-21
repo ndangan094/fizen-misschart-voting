@@ -7,15 +7,15 @@ function Home() {
 
     const claim = query.get("claim");
     return (
-        <div className="flex flex-col relative max-w-[500px] select-none  mx-auto">
+        <div className="flex flex-col relative max-w-[500px] select-none mx-auto">
             <div className="flex flex-row fixed top-0 max-w-[500px] w-full bg-[#FBFBFD] justify-between py-4 px-4">
                 <img onClick={() => { FiToken.postMessage(JSON.stringify({ type: "back" })) }} className="cursor-pointer" src="/assets/back.svg" alt="Back" />
-                <p  className="font-medium text-lg">FiCafe Event</p>
+                <p className="font-medium text-lg">FiCafe Event</p>
                 <img onClick={() => { FiToken.postMessage(JSON.stringify({ type: "close" })) }} className="cursor-pointer" src="/assets/cancel.svg" alt="Cancel" />
             </div>
             <div className="flex flex-col pt-[60px]">
                 <img src="/assets/fi-food-banner.png" alt="Banner" />
-                <div className="flex flex-col px-4"> 
+                <div className="flex flex-col px-4">
                     <div className="text-2xl font-semibold py-5">
                         <p>FREE COFFEE</p>
                         <p>FOR CRYPTO LOVERS!</p>
@@ -32,7 +32,9 @@ function Home() {
                         NOW! Coffee and gas fees are on us!
                     </span>
                     <div className="h-6" />
-                    {claim == "false" ? <Link to={`/captcha?accountName=${query.get("accountName")}&address=${query.get("address")}`} className="w-full bg-[#500EC1] h-[44px] rounded-3xl text-white font-medium text-center items-center justify-center flex">
+                    {claim == "false" ? query.get("address") == "null" ? <button onClick={() => { FiToken.postMessage(JSON.stringify({ type: "setup_wallet" })) }} className="w-full bg-[#500EC1] h-[44px] rounded-3xl text-white font-medium text-center items-center justify-center flex">
+                        <span>Claim  <img className="inline" src="/assets/fi-logo.svg" alt="logo-fi" /> 10 FiCafe tokens</span>
+                    </button> : <Link to={`/captcha?accountName=${query.get("accountName")}&address=${query.get("address")}`} className="w-full bg-[#500EC1] h-[44px] rounded-3xl text-white font-medium text-center items-center justify-center flex">
                         <span>Claim  <img className="inline" src="/assets/fi-logo.svg" alt="logo-fi" /> 10 FiCafe tokens</span>
                     </Link> : <button className="w-full bg-[#8089A9] h-[44px] rounded-3xl text-white font-medium text-center items-center justify-center flex">
                         <span>Claim  <img className="inline" src="/assets/fi-logo.svg" alt="logo-fi" /> 10 FiCafe tokens</span>
