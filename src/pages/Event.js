@@ -3,19 +3,19 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate, } from "react-router-dom";
 
 function Event() {
-    
-    const [dateNow,setDateNow] = useState(new Date().getTime() / 1000)
-    const dateEvent = 1655874000;
+
+    const [dateNow, setDateNow] = useState(new Date().getTime() / 1000)
+    const dateEvent = 1655881200;
     const timeEvent = 1800;
 
-    
 
-    useEffect(()=>{
-        setInterval(()=>{
+
+    useEffect(() => {
+        setInterval(() => {
             setDateNow(new Date().getTime() / 1000);
             console.log("a");
-        },5000)
-    },[])
+        }, 5000)
+    }, [])
 
     const EventEarly = () => {
         return (<>
@@ -75,7 +75,7 @@ function Event() {
 
     const EventEnd = () => {
         return (<>
-            <div className="flex flex-col justify-center items-center text-[#35084F] text-center w-full">
+            <div className="flex flex-col justify-center items-center text-[#35084F] text-center ">
                 <p className="font-medium">The free FiCafe event has ended.</p>
                 <p>Join us for more coming events</p>
                 <div className="h-4" />
@@ -93,7 +93,7 @@ function Event() {
 
     const Selfie = () => {
         return <>
-            <div className="flex flex-col relative mx-4 justify-center items-end">
+            <div className="flex flex-col relative mx-4 justify-center items-end w-full">
                 <img src="/assets/selfie.png" alt="Selfie" />
                 <div className="flex flex-col absolute text-[#35084F] ml-[45%] mt-5 text-xs">
                     <p >Take a selfie at the store to have a chance to win :</p>
@@ -107,31 +107,34 @@ function Event() {
     }
 
     return (
-        <div className="flex flex-col  max-w-[500px] select-none mx-auto">
-            <div className="flex flex-row  w-full bg-[#FBFBFD] justify-between py-4 px-4">
-                <img onClick={() => { FiToken.postMessage(JSON.stringify({ type: "back" })) }} className="cursor-pointer" src="/assets/back.svg" alt="Back" />
-                <p className="font-medium text-lg">FiCafe Event</p>
-                <img onClick={() => { FiToken.postMessage(JSON.stringify({ type: "close" })) }} className="cursor-pointer" src="/assets/cancel.svg" alt="Cancel" />
-            </div>
-            <div className="flex flex-col h-[calc(100vh-60px)] items-center justify-center">
-                <div className="flex flex-col justify-center items-center bg-[#F2B858] rounded-[18px] mx-4 p-1">
-                    <p className="text-white">FiCafe Event</p>
-                    <div className="h-1" />
-                    <div className="flex flex-col justify-center items-center bg-[#FFF9F3] rounded-2xl w-full py-1 px-4">
-                        <img className="py-2" src="/assets/token-logo.png" alt="Fi Token" />
-                        {dateNow < dateEvent ? <EventEarly /> : null}
-                        {(dateEvent <= dateNow && dateNow <= (dateEvent + timeEvent)) ? <EventOnGoing /> : null}
-                        {dateNow > (dateEvent + timeEvent) ? <EventEnd /> : null}
-
-                    </div>
+        <div className="flex flex-col relative max-w-[500px] select-none mx-auto">
+            <img src="/assets/bg-event.png" alt="claim" />
+            <div className="flex flex-col absolute w-full">
+                <div className="flex flex-row  w-full bg-[#FBFBFD] justify-between py-4 px-4">
+                    <img onClick={() => { FiToken.postMessage(JSON.stringify({ type: "back" })) }} className="cursor-pointer" src="/assets/back.svg" alt="Back" />
+                    <p className="font-medium text-lg">FiCafe Event</p>
+                    <img onClick={() => { FiToken.postMessage(JSON.stringify({ type: "close" })) }} className="cursor-pointer" src="/assets/cancel.svg" alt="Cancel" />
                 </div>
-                {(dateEvent <= dateNow && dateNow <= (dateEvent + timeEvent)) ? <Selfie /> : null}
+                <div className="flex flex-col h-[calc(100vh-60px)] items-center justify-center px-4">
+                    <div className="flex flex-col justify-center items-center bg-[#F2B858] rounded-[18px] p-1 w-full">
+                        <p className="text-white">FiCafe Event</p>
+                        <div className="h-1" />
+                        <div className="flex flex-col justify-center items-center bg-[#FFF9F3] rounded-2xl w-full py-1 px-4">
+                            <img className="py-2" src="/assets/token-logo.png" alt="Fi Token" />
+                            {dateNow < dateEvent ? <EventEarly /> : null}
+                            {(dateEvent <= dateNow && dateNow <= (dateEvent + timeEvent)) ? <EventOnGoing /> : null}
+                            {dateNow > (dateEvent + timeEvent) ? <EventEnd /> : null}
 
-                <div className="h-11" />
-                <button onClick={() => { FiToken.postMessage(JSON.stringify({ type: "back" })) }} className="flex relative justify-center items-center max-w-[186px] mx-auto">
-                    <p className="absolute font-medium">Back</p>
-                    <img src="/assets/claim.svg" alt="claim" />
-                </button>
+                        </div>
+                    </div>
+                    {(dateEvent <= dateNow && dateNow <= (dateEvent + timeEvent)) ? <Selfie /> : null}
+
+                    <div className="h-11" />
+                    <button onClick={() => { FiToken.postMessage(JSON.stringify({ type: "back" })) }} className="flex relative justify-center items-center max-w-[186px] mx-auto">
+                        <p className="absolute font-medium">Back</p>
+                        <img src="/assets/claim.svg" alt="claim" />
+                    </button>
+                </div>
             </div>
         </div>
     );
