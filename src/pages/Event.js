@@ -5,7 +5,7 @@ import { Link, useNavigate, } from "react-router-dom";
 function Event() {
 
     const [dateNow, setDateNow] = useState(new Date().getTime() / 1000)
-    const dateEvent = 1655887920;
+    const dateEvent = 1655888920;
     const timeEvent = 1800;
 
 
@@ -108,13 +108,14 @@ function Event() {
 
     return (
         <div className="flex flex-col relative max-w-[500px] select-none mx-auto">
-            <img src="/assets/bg-event.png" alt="claim" />
-            <div className="flex flex-col absolute w-full ">
-                <div className="flex flex-row  w-full bg-[#FBFBFD] justify-between py-4 px-4">
+             <div className="flex flex-row fixed  w-full bg-[#FBFBFD] justify-between py-4 px-4">
                     <img onClick={() => { FiToken.postMessage(JSON.stringify({ type: "back" })) }} className="cursor-pointer" src="/assets/back.svg" alt="Back" />
                     <p className="font-medium text-lg">FiCafe Event</p>
                     <img onClick={() => { FiToken.postMessage(JSON.stringify({ type: "close" })) }} className="cursor-pointer" src="/assets/cancel.svg" alt="Cancel" />
                 </div>
+            <img src="/assets/bg-event.png" alt="claim" />
+            <div className="flex flex-col absolute w-full mt-[60px]">
+
                 <div className="flex flex-col h-[calc(100vh-60px)] items-center justify-center px-4 my-5">
                     <div className="flex flex-col justify-center items-center bg-[#F2B858] rounded-[18px] p-1 w-full">
                         <p className="text-white">FiCafe Event</p>
