@@ -5,7 +5,7 @@ import { Link, useNavigate, } from "react-router-dom";
 function Event() {
 
     const [dateNow, setDateNow] = useState(new Date().getTime() / 1000)
-    const dateEvent = 1655881200;
+    const dateEvent = 1655887920;
     const timeEvent = 1800;
 
 
