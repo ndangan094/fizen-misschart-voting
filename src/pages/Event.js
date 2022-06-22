@@ -116,7 +116,7 @@ function Event() {
             <img src="/assets/bg-event.png" alt="claim" />
             <div className="flex flex-col absolute w-full mt-[60px]">
 
-                <div className="flex flex-col h-[calc(100vh-60px)] items-center justify-center px-4 my-5">
+                <div className="flex flex-col mt-[60px] items-center justify-center px-4 my-5">
                     <div className="flex flex-col justify-center items-center bg-[#F2B858] rounded-[18px] p-1 w-full">
                         <p className="text-white">FiCafe Event</p>
                         <div className="h-1" />
