@@ -108,7 +108,7 @@ function Event() {
 
     return (
         <div className="flex flex-col relative max-w-[500px] select-none mx-auto">
-             <div className="flex flex-row fixed  w-full bg-[#FBFBFD] justify-between py-4 px-4 z-10">
+             <div className="flex flex-row fixed top-0 max-w-[500px] w-full bg-[#FBFBFD] justify-between py-4 px-4 z-10">
                     <img onClick={() => { FiToken.postMessage(JSON.stringify({ type: "back" })) }} className="cursor-pointer" src="/assets/back.svg" alt="Back" />
                     <p className="font-medium text-lg">FiCafe Event</p>
                     <img onClick={() => { FiToken.postMessage(JSON.stringify({ type: "close" })) }} className="cursor-pointer" src="/assets/cancel.svg" alt="Cancel" />
