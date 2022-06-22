@@ -109,18 +109,18 @@ function Event() {
     return (
         <div className="flex flex-col relative max-w-[500px] select-none mx-auto">
             <img src="/assets/bg-event.png" alt="claim" />
-            <div className="flex flex-col absolute w-full">
+            <div className="flex flex-col absolute w-full ">
                 <div className="flex flex-row  w-full bg-[#FBFBFD] justify-between py-4 px-4">
                     <img onClick={() => { FiToken.postMessage(JSON.stringify({ type: "back" })) }} className="cursor-pointer" src="/assets/back.svg" alt="Back" />
                     <p className="font-medium text-lg">FiCafe Event</p>
                     <img onClick={() => { FiToken.postMessage(JSON.stringify({ type: "close" })) }} className="cursor-pointer" src="/assets/cancel.svg" alt="Cancel" />
                 </div>
-                <div className="flex flex-col h-[calc(100vh-60px)] items-center justify-center px-4">
+                <div className="flex flex-col h-[calc(100vh-60px)] items-center justify-center px-4 my-5">
                     <div className="flex flex-col justify-center items-center bg-[#F2B858] rounded-[18px] p-1 w-full">
                         <p className="text-white">FiCafe Event</p>
                         <div className="h-1" />
                         <div className="flex flex-col justify-center items-center bg-[#FFF9F3] rounded-2xl w-full py-1 px-4">
-                            <img className="py-2" src="/assets/token-logo.png" alt="Fi Token" />
+                            <img className="py-2" width={78} src="/assets/token-logo.png" alt="Fi Token" />
                             {dateNow < dateEvent ? <EventEarly /> : null}
                             {(dateEvent <= dateNow && dateNow <= (dateEvent + timeEvent)) ? <EventOnGoing /> : null}
                             {dateNow > (dateEvent + timeEvent) ? <EventEnd /> : null}
