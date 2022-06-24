@@ -6,7 +6,7 @@ function Event() {
 
     const [dateNow, setDateNow] = useState(new Date().getTime() / 1000)
     const dateEvent = 1656050400;
-    const timeEvent = 3600*4;
+    const timeEvent = 3600*1;
 
 
 
