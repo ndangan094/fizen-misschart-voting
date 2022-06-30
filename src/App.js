@@ -10,7 +10,7 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Home />}/>
+      <Route path="/" element={<Event />}/>
       <Route path="/captcha" element={<Captcha />}/>
       <Route path="/claim" element={<Claim />}/>
       <Route path="/event" element={<Event />}/>

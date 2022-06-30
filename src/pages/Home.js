@@ -17,8 +17,7 @@ function Home() {
                 <img src="/assets/fi-food-banner.png" alt="Banner" />
                 <div className="flex flex-col px-4">
                     <div className="text-2xl font-semibold py-5">
-                        <p>FREE COFFEE</p>
-                        <p>FOR CRYPTO LOVERS!</p>
+                        <p>☕️ FREE COFFEE FOR CRYPTO LOVERS! ALSO WIN $1,100 REWARD POOL! TOTAL PRIZE OF $5,100 GIVING AWAY IN 1 WEEK.</p>
                     </div>
                     <p>Fizen envisioned the future of cryptocurrency as a medium of payment and everyone can use their crypto for daily purchasing. We are bringing this future one step closer by building Fizen Wallet - a  crypto super wallet application that allows users to use crypto in a diverse ecosystem of E-Commerce, GameFi, and DeFi. </p>
                     <p className="pt-3">Would you like to join us for a coffee and talk about this vision?</p>
@@ -28,7 +27,7 @@ function Home() {
                             <img className="inline" src="/assets/fi-logo.svg" alt="logo-fi" />
                             {" FiCafe Token "}
                         </span>
-                        to buy coffee at <span className="text-[#fd8031]">Starbucks</span> or <span className="text-[#fd8031]">{"The Coffee Bean & Tea Leaf "}</span>
+                        to buy coffee at <span className="text-[#fd8031]">Starbucks</span> or <span className="text-[#fd8031]">{"Costa Coffee "}</span>
                         NOW! Coffee and gas fees are on us!
                     </span>
                     <div className="h-6" />
@@ -48,16 +47,23 @@ function Home() {
                     <div className="h-[2px]" />
                     <p className="text-base font-medium">Here’s How you can enjoy this Coffee deal:</p>
                     <div className="h-3" />
+
                     <div className="flex flex-row">
                         <div className="px-1">•</div>
-                        <span> <span className="font-bold">Step 1: </span>
+                        <span><span className="font-bold">Step 1: </span>
+                            <span>Download the Fizen app from the <a className="text-[#1155cc] underline-offset-1 underline" href="https://apps.apple.com/us/app/fizen-wallet-gamefi-payment/id1621269508">Apple App Store</a> and/or <a className="text-[#1155cc] underline-offset-1 underline" href="https://play.google.com/store/apps/details?id=com.fizen.io.wallet" >Google Play Store</a>.</span></span>
+                    </div>
+                    <div className="h-3" />
+                    <div className="flex flex-row">
+                        <div className="px-1">•</div>
+                        <span> <span className="font-bold">Step 2: </span>
                             <span>Create/Import a wallet</span></span>
                     </div>
                     <div className="h-3" />
                     <div className="flex flex-row">
                         <div className="px-1">•</div>
-                        <span><span className="font-bold">Step 2: </span>
-                            <span>Click FiCafe Token to claim</span></span>
+                        <span> <span className="font-bold">Step 3: </span>
+                            <span>Click FiCafe Token to claim. Users can start to claim their token at <span class="font-bold">2:00 AM and 2:00 PM UTC time</span>. Each person can only claim the token once during the program. </span></span>
                     </div>
                     <div className="h-3" />
                     <div className="flex flex-row">
@@ -72,7 +78,7 @@ function Home() {
                         <div className="px-1">•</div>
                         <span>
                             <span className="font-bold">Step 4: </span>
-                            <span>Use your gift card to place orders at any stores of Starbucks or The Coffee Bean & Tea Leaf</span>
+                            <span>Go to the Giftcard section in the app and use the claimed FiCafe tokens to purchase gift cards from Starbucks or Costa Coffee.</span>
                         </span>
                     </div>
                     <div className="h-3" />
@@ -80,8 +86,16 @@ function Home() {
                         <div className="px-1">•</div>
                         <span>
                             <span className="font-bold">Step 5: </span>
-                            <span>Sit back, enjoy your coffee and ping us on Telegram to talk more</span>
-                            <div className="h-3" />
+                            <span>Use your gift card to place orders at any Starbucks or Costa Coffee stores</span>
+                        </span>
+                    </div>
+                    <div className="h-3" />
+                    <div className="flex flex-row">
+                        <div className="px-1">•</div>
+                        <span>
+                            <span className="font-bold">Step 6: </span>
+                            <span>Take a selfie with your coffee or a picture of your phone showing the Fizen wallet in the coffee shop, post it on social and tag us with the hashtag #FizenCoffeeWeek #Fizen #CryptoCoffee to stand a chance of winning a $1,100 prize at our Social Campaign! </span>
+                            {/* <div className="h-3" />
                             <div onClick={() => { window.open("https://t.me/fizen_io"); }} className="flex flex-row justify-between cursor-pointer px-3 py-[10px] bg-[#26A5E4]/[0.1] rounded-[4px]">
                                 <div className="flex flex-row">
                                     <img src="/assets/telegram.svg" alt="Telegram" />
@@ -89,20 +103,31 @@ function Home() {
                                     <p>fizen_io</p>
                                 </div>
                                 <img src="/assets/forward.svg" alt="Forward" />
-                            </div>
+                            </div> */}
                         </span>
                     </div>
+                    <div className="h-3" />
+                    <span>
+                        <span className="font-bold">- 01 Lucky Post: </span>
+                        <span>300 USDT + 500 Fi Token (worth $125) + IDO Whitelist slot</span>
+                    </span>
+                    <span>
+                        <span className="font-bold">- 03 Most Liked Posts:</span>
+                        <span>100 USDT + 500 Fi Tokens (worth $125) + IDO Whitelist slot</span>
+                    </span>
+                    <div className="h-3" />
+                    <p>Entities must be received by 11:59 PM UTC on July 19. The lucky winner will be chosen at random. Post entries must be public.</p>
                     <div className="h-6" />
                     <div className="h-[1px] w-full bg-[#EDECF3]" />
                     <div className="h-6" />
                     <span>
-                        <span className="font-bold">Promotion Period: </span>
-                        <span>4 Jul – 10 Jul</span>
+                        <span className="font-bold">Fizen Coffee Week Promo Period: </span>
+                        <span>12 Jul – 19 Jul</span>
                     </span>
                     <div className="h-2" />
                     <span>
                         <span className="font-bold">Promo Value: </span>
-                        <span>10 FiCafe Token (1 FiCafe Token = $1)</span>
+                        <span>10 FiCafe tokens (1 FiCafe token = $1.00) </span>
                     </span>
                     <div className="h-2" />
                     <p className="font-bold">Terms & Conditions: </p>
@@ -110,12 +135,12 @@ function Home() {
                     <div className="flex flex-col pl-5">
                         <div className="flex flex-row">
                             <div className="pl-1 pr-2">•</div>
-                            <span>Valid for Starbucks and The Coffee Bean & Tea Leaf <span className="font-semibold">ONLY.</span></span>
+                            <span>Valid for Starbucks and The Coffee Bean & Costa Coffee <span className="font-semibold">ONLY.</span></span>
                         </div>
                         <div className="h-3" />
                         <div className="flex flex-row">
                             <div className="pl-1 pr-2">•</div>
-                            <p>Currently available in all Starbucks or The Coffee Bean & Tea Leaf stores within Philippines, Vietnam, UK and US</p>
+                            <p>Currently available in all Starbucks or Costa Coffee stores within Vietnam, UK, US and UAE</p>
                         </div>
                         <div className="h-3" />
                         <div className="flex flex-row">
