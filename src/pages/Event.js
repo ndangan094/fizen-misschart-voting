@@ -20,7 +20,7 @@ function Event() {
     const EventEarly = () => {
         return (<>
             <div className="flex flex-col justify-center items-center text-[#35084F] text-center">
-                <p className="font-medium">The free FiCafe event has not started yet.</p>
+                <p className="font-medium">The FiCafe event has not started yet.</p>
                 <p>Please come back later.</p>
                 <div className="h-4" />
             </div>
