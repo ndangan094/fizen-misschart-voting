@@ -2,17 +2,18 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate, } from "react-router-dom";
 
-function Event() {
+function EventEnd() {
 
     const [dateNow, setDateNow] = useState(new Date().getTime() / 1000)
     const dateEvent = 1657399958;
-    const timeEvent = 3600*1;
+    const timeEvent = 3600 * 1;
 
 
 
     useEffect(() => {
         setInterval(() => {
             setDateNow(new Date().getTime() / 1000);
+            console.log("a");
         }, 5000)
     }, [])
 
@@ -107,11 +108,11 @@ function Event() {
 
     return (
         <div className="flex flex-col relative max-w-[500px] select-none mx-auto">
-             <div className="flex flex-row fixed top-0 max-w-[500px] w-full bg-[#FBFBFD] justify-between py-4 px-4 z-10">
-                    <img onClick={() => { FiToken.postMessage(JSON.stringify({ type: "back" })) }} className="cursor-pointer" src="/assets/back.svg" alt="Back" />
-                    <p className="font-medium text-lg">FiCafe Event</p>
-                    <img onClick={() => { FiToken.postMessage(JSON.stringify({ type: "close" })) }} className="cursor-pointer" src="/assets/cancel.svg" alt="Cancel" />
-                </div>
+            <div className="flex flex-row fixed top-0 max-w-[500px] w-full bg-[#FBFBFD] justify-between py-4 px-4 z-10">
+                <img onClick={() => { FiToken.postMessage(JSON.stringify({ type: "back" })) }} className="cursor-pointer" src="/assets/back.svg" alt="Back" />
+                <p className="font-medium text-lg">FiCafe Event</p>
+                <img onClick={() => { FiToken.postMessage(JSON.stringify({ type: "close" })) }} className="cursor-pointer" src="/assets/cancel.svg" alt="Cancel" />
+            </div>
             <img src="/assets/bg-event.png" alt="claim" />
             <div className="flex flex-col absolute w-full mt-[60px]">
 
@@ -121,10 +122,7 @@ function Event() {
                         <div className="h-1" />
                         <div className="flex flex-col justify-center items-center bg-[#FFF9F3] rounded-2xl w-full py-1 px-4">
                             <img className="py-2" width={78} src="/assets/token-logo.png" alt="Fi Token" />
-                            {dateNow < dateEvent ? <EventEarly /> : null}
-                            {(dateEvent <= dateNow && dateNow <= (dateEvent + timeEvent)) ? <EventOnGoing /> : null}
-                            {dateNow > (dateEvent + timeEvent) ? <EventEnd /> : null}
-
+                            <EventEnd />
                         </div>
                     </div>
                     {(dateEvent <= dateNow && dateNow <= (dateEvent + timeEvent)) ? <Selfie /> : null}
@@ -140,4 +138,4 @@ function Event() {
     );
 }
 
-export default Event;
+export default EventEnd;

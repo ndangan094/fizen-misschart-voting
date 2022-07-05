@@ -11,9 +11,11 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Event />}/>
+      <Route path="/event" element={<Home />}/>
+
       <Route path="/captcha" element={<Captcha />}/>
       <Route path="/claim" element={<Claim />}/>
-      <Route path="/event" element={<Event />}/>
+      {/* <Route path="/event" element={<Event />}/> */}
     </Routes>
   </BrowserRouter>
   );
