@@ -200,13 +200,13 @@ function Home() {
                         </div>
 
                         <div className="h-3" />
-                        <p>Entities must be received by <span className="font-semibold">11:59 PM UTC</span> on <span className="font-semibold">July 19</span>. The lucky winner will be chosen at random. Post entries must be public.</p>
+                        <p>Entities must be received by <span className="font-semibold">11:59 PM UTC</span> on <span className="font-semibold">August 1</span>. The lucky winner will be chosen at random. Post entries must be public.</p>
                         <div className="h-6" />
                         <div className="h-[1px] w-full bg-[#EDECF3]" />
                         <div className="h-6" />
                         <span>
                             <span className="font-bold">Fizen Coffee Week Promo Period: </span>
-                            <span>12 Jul – 19 Jul</span>
+                            <span>25 Jul – 1 Aug</span>
                         </span>
                         <div className="h-2" />
                         <span>
@@ -240,6 +240,11 @@ function Home() {
                             <div className="flex flex-row">
                                 <div className="pl-1 pr-2">•</div>
                                 <p>Fizen reserves the right to alter, extend or terminate the deal, or amend the terms and conditions at its sole discretion at any time without prior notice. In case of any disputes directly or indirectly arising from the deal, the decision of Fizen shall be final.</p>
+                            </div>
+                            <div className="h-3" />
+                            <div className="flex flex-row">
+                                <div className="pl-1 pr-2">•</div>
+                                <p>All transaction will be run on BNB Chain.</p>
                             </div>
                         </div>
                         <div className="h-10" />
