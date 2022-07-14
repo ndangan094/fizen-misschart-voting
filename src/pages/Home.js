@@ -26,32 +26,40 @@ function Home() {
     }
 
     const getData = async () => {
-        const res = await axios.post("https://giftcard-api-stag.fizen.io/api/reward-token/status", { eventID: "62b3e235b2a83f00076beda3" })
-        console.log(res.data.data)
-        setData(res.data.data);
-        let currentTime = parseInt(new Date().getTime() / 1000);
-        setCurrentTimeNow(currentTime);
-        setEventTime(res.data.data.currentDistributeStartTime);
-        console.log(currentTime);
-       
-        if (currentTime < res.data.data.eventStartDate ) {
-            setStep({ step: 1 })
-        } else if (res.data.data.eventStartDate < currentTime && currentTime < res.data.data.currentDistributeStartTime ) {
-            console.log("adsad")
-            setStep({ step: 2 })
-            setDiff(res.data.data.currentDistributeStartTime - currentTime);
-        } else if (res.data.data.currentDistributeStartTime < currentTime && currentTime < res.data.data.eventEndDate ) {
-            if (res.data.data.rewardTokenCount.afterCurrentDistributeTime === res.data.data.rewardTokenCount.remainingEventSlots) {       
-                console.log("cvbj")
-                    setStep({ step: 2 })
-                    setDiff(res.data.data.nextDistributeStartTime - currentTime);
-            }else{
-                setStep({ step: 3 })
-            }
-        }
-        else if (currentTime > res.data.data.eventEndDate ) {
-            setCurrentStep(4);
-        }
+       try{
+           const res = await axios.post("https://giftcard-api-stag.fizen.io/api/reward-token/status", { eventID: "62b3e235b2a83f00076beda3" })
+           console.log(res.data.data)
+           setData(res.data.data);
+           let currentTime = parseInt(new Date().getTime() / 1000);
+           setCurrentTimeNow(currentTime);
+           setEventTime(res.data.data.currentDistributeStartTime);
+           console.log(currentTime);
+
+           if (currentTime < res.data.data.eventStartDate ) {
+               setStep({ step: 1 })
+           } else if (res.data.data.eventStartDate < currentTime && currentTime < res.data.data.currentDistributeStartTime ) {
+               console.log("adsad")
+               setStep({ step: 2 })
+               setDiff(res.data.data.currentDistributeStartTime - currentTime);
+           } else if (res.data.data.currentDistributeStartTime < currentTime && currentTime < res.data.data.eventEndDate ) {
+               if (res.data.data.rewardTokenCount.afterCurrentDistributeTime === res.data.data.rewardTokenCount.remainingEventSlots) {
+                   console.log("cvbj")
+                   setStep({ step: 2 })
+                   setDiff(res.data.data.nextDistributeStartTime - currentTime);
+               }else{
+                   setStep({ step: 3 })
+               }
+           }
+           else if (currentTime > res.data.data.eventEndDate ) {
+               setStep({step:4});
+           }else{
+               setStep({step:1});
+
+           }
+       }catch (e) {
+           setStep({step:1});
+
+       }
 
     }
 
