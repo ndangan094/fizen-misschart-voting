@@ -224,7 +224,7 @@ function Home() {
                             <div className="h-3" />
                             <div className="flex flex-row">
                                 <div className="pl-1 pr-2">•</div>
-                                <p>Currently available in all Starbucks or Costa Coffee stores within Vietnam, US and UAE.</p>
+                                <p>Currently available in all Starbucks Vietnam or Costa Coffee UAE stores</p>
                             </div>
                             <div className="h-3" />
                             <div className="flex flex-row">
