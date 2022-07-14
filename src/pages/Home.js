@@ -19,13 +19,11 @@ function Home() {
 
     let interval;
 
-
     const setStep = ({ step }) => {
         if (currentStep != step) {
             setCurrentStep(step);
         }
     }
-
 
     const getData = async () => {
         const res = await axios.post("https://giftcard-api-stag.fizen.io/api/reward-token/status", { eventID: "62b3e235b2a83f00076beda3" })
