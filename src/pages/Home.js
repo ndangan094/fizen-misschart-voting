@@ -28,7 +28,7 @@ function Home() {
 
 
     const getData = async () => {
-        const res = await axios.post("https://dev-api-giftcard.fizen.io/api/reward-token/status", { eventID: "62b3e235b2a83f00076beda3" })
+        const res = await axios.post("https://giftcard-api-stag.fizen.io/api/reward-token/status", { eventID: "62b3e235b2a83f00076beda3" })
         console.log(res.data.data)
         setData(res.data.data);
         let currentTime = parseInt(new Date().getTime() / 1000);
