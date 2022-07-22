@@ -129,9 +129,9 @@ function Home() {
                         <div className="h-6" />
                         {claim == "false" && currentStep===3  ? query.get("address") == "null" ? <button onClick={() => { FiToken.postMessage(JSON.stringify({ type: "setup_wallet" })) }} className="w-full bg-[#500EC1] h-[44px] rounded-3xl text-white font-medium text-center items-center justify-center flex">
                             <span>Claim  <img className="inline" src="/assets/fi-logo.svg" alt="logo-fi" /> 10 FiCafe tokens</span>
-                        </button> : <Link to={`/captcha?accountName=${query.get("accountName")}&address=${query.get("address")}`} className="w-full bg-[#500EC1] h-[44px] rounded-3xl text-white font-medium text-center items-center justify-center flex">
+                        </button> : <div onClick={() => { FiToken.postMessage(JSON.stringify({ type: "checkCountry" })) }} to={`/captcha?accountName=${query.get("accountName")}&address=${query.get("address")}`} className="w-full bg-[#500EC1] h-[44px] rounded-3xl text-white font-medium text-center items-center justify-center flex">
                             <span>Claim  <img className="inline" src="/assets/fi-logo.svg" alt="logo-fi" /> 10 FiCafe tokens</span>
-                        </Link> : <button className="w-full bg-[#8089A9] h-[44px] rounded-3xl text-white font-medium text-center items-center justify-center flex">
+                        </div> : <button className="w-full bg-[#8089A9] h-[44px] rounded-3xl text-white font-medium text-center items-center justify-center flex">
                             <span>Claim  <img className="inline" src="/assets/fi-logo.svg" alt="logo-fi" /> 10 FiCafe tokens</span>
                         </button>}
                         <div className="h-10" />
