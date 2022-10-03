@@ -157,7 +157,7 @@ function Home() {
                     <p className="text-[#FF8C24]">It's time to push your luck! Jump in!</p>
                     <div className="h-3" />
                 </div>
-                <iframe className="h-[220px]" src="https://www.youtube.com/embed/gQlMMD8auMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe className="h-[60vw]" src="https://www.youtube.com/embed/gQlMMD8auMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div className="flex flex-col px-4">
                     <div className="h-6" />
                     <p className="font-semibold">About Thetan Arena</p>
