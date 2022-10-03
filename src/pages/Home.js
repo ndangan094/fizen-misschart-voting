@@ -139,7 +139,7 @@ function Home() {
                                 <div onClick={() => { window.open("https://t.me/fizen_io"); }} className="flex flex-row justify-between cursor-pointer">
                                     <div className="flex flex-row">
                                         <img src="/assets/telegram.svg" alt="Linked In" />
-                                        <div className="w-3" />
+                                        <div className="w-3" /> 
                                         <p>fizen_io</p>
                                     </div>
                                     <img src="/assets/forward.svg" alt="Forward" />
