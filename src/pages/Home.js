@@ -90,15 +90,20 @@ function Home() {
                 <img onClick={() => { FiToken.postMessage(JSON.stringify({ type: "close" })) }} className="cursor-pointer" src="/assets/cancel.svg" alt="Cancel" />
             </div>
             <div className="flex flex-col pt-[60px]">
-                <img src="/assets/fi-food-banner.png" alt="Banner" />
                 <div className="flex flex-col px-4">
-                    <div className="text-xl font-semibold py-5">
+                    <div className="text-xl font-semibold py-5 text-center">
                         <span> Fizen.io x Thetan Arena Amazing Check-in Race: Win <span className="text-[#FF8C24]">$5,000</span> Rewards Pool & An <span className="text-[#FF8C24]">iPhone 14</span> Lucky Draw</span>
                     </div>
-                    <span>To kick off our strategic partnership with Thetan Arena, the two parties will work together to conduct a distribution of gifts for Thetan's gaming community with a total prize pool of up to <span className="font-semibold">$7,000</span></span>
-                    <p className="pt-3">With the vision of becoming the leading super wallet app for GameFi, Fizen is working on expanding our network with P2E projects and providing different services and experiences to players globally. And one of the partners we work closely with is Thetan Arena - the world's first blockchain-based MOBA-GAME. As a part of this partnership, we collaborated to organize a Check-in campaign to receive attractive gifts in the form of FiThetan Tokens.</p>
+                    <span className="font-semibold">In order to kick-off our strategic partnership with Thetan Arena, the two parties will work together to distribute a total prize pool of up to $7,000 for Thetan's gaming community.</span>
+
+                </div>
+                <div className="h-3" />
+                <img src="/assets/fi-food-banner.png" alt="Banner" />
+                <div className="h-3" />
+                <div className="flex flex-col px-4">
+                    <p className="pt-3">Fizen strives to become the leading super wallet app for GameFi by expanding its network with P2E projects and providing different services and experiences globally. A partner we work closely with is Thetan Arena, the world's first blockchain-based MOBA game. As part of this partnership, we will organize a Check-in campaign to distribute FiThetan Tokens to Thetan gaming community.</p>
                     <span className="pt-3">
-                        Note: FiThetan Token is a proprietary token issued by Fizen.io for users to experience shopping with crypto through the Fizen wallet (gasless transaction). FiThetan can now be used to shop for <span className="font-semibold">21,000+ products</span> and services at <span className="font-semibold">2,500+ brands</span>  worldwide using Fizen Super App.
+                        Note: FiThetan Token is an event-only token that Fizen.io issues to enable users to experience shopping with crypto through the Fizen wallet (gasless transaction). Using our Fizen Super App, FiThetan can now be used to shop for <span className="font-semibold">21,000+ products</span> and services at <span className="font-semibold">2,500+ brands</span>  worldwide.
                     </span>
                     <div className="h-6" />
                     <p className="font-medium text-lg">How to join Fizen x Thetan Arena Amazing Check-in Race?</p>
@@ -114,17 +119,22 @@ function Home() {
                     <div className="h-3" />
                     <div className="flex flex-row">
                         <div className="px-2">•</div>
-                        <span>Users use FiThetan to shop with Fizen Super.</span>
+                        <span><span className="font-semibold">Till 23:59 on October 23,</span> users can use their FiThetan tokens to purchase gift cards. The leftover FiThetan tokens will then all be disabled.</span>
+                    </div>
+                    <div className="h-3" />
+                    <div className="flex flex-row">
+                        <div className="px-2">-</div>
+                        <span className="font-semibold">For iPhone 14 Lucky Draw:</span>
                     </div>
                     <div className="h-3" />
                     <div className="flex flex-row">
                         <div className="px-2">•</div>
-                        <span>Get Order ID(s) and send order IDs to the <span onClick={() => { window.open("https://t.me/fizen_io") }} className="text-[#5D5FEF] cursor-pointer">official Telegram</span> <span onClick={() => { window.open("https://fizen.io/") }} className=" cursor-pointer" >of</span> <span onClick={() => { window.open("https://fizen.io/") }} className="text-[#5D5FEF] cursor-pointer">Fizen.io</span>.</span>
+                        <span>To have a chance at winning an iPhone 14 on <span className="font-semibold">October 25</span>, join the lucky draw program.</span>
                     </div>
                     <div className="h-3" />
                     <div className="flex flex-row">
                         <div className="px-2">•</div>
-                        <span>Wait for the lucky draw program on <span className="font-semibold">October 25</span> to get a chance of winning an <span className="font-semibold">iPhone 14.</span> </span>
+                        <span>Get Order ID(s) and send order IDs to the official<span onClick={() => { window.open("https://t.me/fizen_io") }} className="text-[#5D5FEF] cursor-pointer"> Telegram</span> <span onClick={() => { window.open("https://fizen.io/") }} className="text-[#5D5FEF] cursor-pointer" >of</span> <span onClick={() => { window.open("https://fizen.io/") }} className="text-[#5D5FEF] cursor-pointer">Fizen.io</span>.</span>
                     </div>
                 </div>
                 <div className="h-8" />
@@ -139,7 +149,7 @@ function Home() {
                                 <div onClick={() => { window.open("https://t.me/fizen_io"); }} className="flex flex-row justify-between cursor-pointer">
                                     <div className="flex flex-row">
                                         <img src="/assets/telegram.svg" alt="Linked In" />
-                                        <div className="w-3" /> 
+                                        <div className="w-3" />
                                         <p>fizen_io</p>
                                     </div>
                                     <img src="/assets/forward.svg" alt="Forward" />
@@ -153,12 +163,13 @@ function Home() {
                     <p className="text-xl font-medium">How to use FiThetan in Fizen Super App</p>
                     <div className="h-6" />
                     <p className="font-semibold">How to get Order ID</p>
-                    <div className="h-[2px]" />
-                    <p className="text-[#FF8C24]">It's time to push your luck! Jump in!</p>
                     <div className="h-3" />
                 </div>
                 <iframe className="h-[60vw]" src="https://www.youtube.com/embed/gQlMMD8auMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div className="flex flex-col px-4">
+                    <div className="h-3" />
+                    <p className="text-[#FF8C24]">It's time to push your luck! Jump in!</p>
+                    <div className="h-3" />
                     <div className="h-6" />
                     <p className="font-semibold">About Thetan Arena</p>
                     <div className="h-3" />
@@ -207,7 +218,7 @@ function Home() {
                     <div className="h-3" />
                     <div className="h-[6px]" />
                     <div className="flex flex-col py-[18px] px-4 bg-[#F6F7FB] rounded-[6px]">
-                        <div onClick={() => { window.open("https://twitter.com/Fizen_CryptoApp"); }} className="flex flex-row justify-between cursor-pointer">
+                        <div onClick={() => { window.open("https://twitter.com/fizenwallet"); }} className="flex flex-row justify-between cursor-pointer">
                             <div className="flex flex-row">
                                 <img src="/assets/twitter.svg" alt="Twitter" />
                                 <div className="w-3" />
