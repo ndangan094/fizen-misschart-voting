@@ -165,7 +165,7 @@ function Home() {
                     <p className="font-semibold">How to get Order ID</p>
                     <div className="h-3" />
                 </div>
-                <iframe className="h-[60vw]" src="https://www.youtube.com/embed/gQlMMD8auMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe className="h-[60vw]" src="https://www.youtube.com/embed/BkwYK0ti1FY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div className="flex flex-col px-4">
                     <div className="h-3" />
                     <p className="text-[#FF8C24]">It's time to push your luck! Jump in!</p>
@@ -222,7 +222,7 @@ function Home() {
                             <div className="flex flex-row">
                                 <img src="/assets/twitter.svg" alt="Twitter" />
                                 <div className="w-3" />
-                                <p className="text-[#5D5FEF] text-[13px] underline">@Fizen_CryptoApp</p>
+                                <p className="text-[#5D5FEF] text-[13px] underline">@fizenwallet</p>
                             </div>
                             <img src="/assets/forward.svg" alt="Forward" />
                         </div>
@@ -250,6 +250,15 @@ function Home() {
                                 <img src="/assets/fb.svg" alt="Linked In" />
                                 <div className="w-3" />
                                 <p className="text-[#5D5FEF] text-[13px] underline">facebook.com/fizenio</p>
+                            </div>
+                            <img src="/assets/forward.svg" alt="Forward" />
+                        </div>
+                        <div className="h-[1px] bg-[#EDECF3] ml-9 my-3" />
+                        <div onClick={() => { window.open("https://www.youtube.com/channel/UCgW8WweY3KEuDkmXAHoA_OQ"); }} className="flex flex-row justify-between cursor-pointer">
+                            <div className="flex flex-row">
+                                <img className="w-6" src="/assets/youtube.svg" alt="Linked In" />
+                                <div className="w-3" />
+                                <p className="text-[#5D5FEF] text-[13px] underline">Fizen - Super App for Crypto Spending</p>
                             </div>
                             <img src="/assets/forward.svg" alt="Forward" />
                         </div>
