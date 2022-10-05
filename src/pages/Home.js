@@ -91,7 +91,7 @@ function Home() {
             </div>
             <div className="flex flex-col pt-[60px]">
                 <div className="flex flex-col px-4">
-                    <div className="text-xl font-semibold py-5 text-center">
+                    <div className="text-xl font-semibold py-5 ">
                         <span> Fizen.io x Thetan Arena Amazing Check-in Race: Win <span className="text-[#FF8C24]">$5,000</span> Rewards Pool & An <span className="text-[#FF8C24]">iPhone 14</span> Lucky Draw</span>
                     </div>
                     <span className="font-semibold">In order to kick-off our strategic partnership with Thetan Arena, the two parties will work together to distribute a total prize pool of up to $7,000 for Thetan's gaming community.</span>
@@ -101,9 +101,9 @@ function Home() {
                 <img src="/assets/fi-food-banner.png" alt="Banner" />
                 <div className="h-3" />
                 <div className="flex flex-col px-4">
-                    <p className="pt-3">Fizen strives to become the leading super wallet app for GameFi by expanding its network with P2E projects and providing different services and experiences globally. A partner we work closely with is Thetan Arena, the world's first blockchain-based MOBA game. As part of this partnership, we will organize a Check-in campaign to distribute FiThetan Tokens to Thetan gaming community.</p>
+                    <p className="pt-3">Fizen strives to become the leading super wallet app for GameFi by expanding its network with P2E projects and providing different services and experiences globally. A partner we work closely with is Thetan Arena, the world's first blockchain-based MOBA game. As part of this partnership, we will organize a Check-in campaign to distribute FiTan Tokens to Thetan gaming community.</p>
                     <span className="pt-3">
-                        Note: FiThetan Token is an event-only token that Fizen.io issues to enable users to experience shopping with crypto through the Fizen wallet (gasless transaction). Using our Fizen Super App, FiThetan can now be used to shop for <span className="font-semibold">21,000+ products</span> and services at <span className="font-semibold">2,500+ brands</span>  worldwide.
+                        Note: FiTan Token is an event-only token that Fizen.io issues to enable users to experience shopping with crypto through the Fizen wallet (gasless transaction). Using our Fizen Super App, FiTan can now be used to shop for <span className="font-semibold">21,000+ products</span> and services at <span className="font-semibold">2,500+ brands</span>  worldwide.
                     </span>
                     <div className="h-6" />
                     <p className="font-medium text-lg">How to join Fizen x Thetan Arena Amazing Check-in Race?</p>
@@ -114,12 +114,12 @@ function Home() {
                     <div className="h-3" />
                     <div className="flex flex-row">
                         <div className="px-2">•</div>
-                        <span>All users who check in 3 days in a row will receive $2.5 in FiThetan Tokens.</span>
+                        <span>All users who check in 3 days in a row will receive $2.5 in FiTan Tokens.</span>
                     </div>
                     <div className="h-3" />
                     <div className="flex flex-row">
                         <div className="px-2">•</div>
-                        <span><span className="font-semibold">Till 23:59 on October 23,</span> users can use their FiThetan tokens to purchase gift cards. The leftover FiThetan tokens will then all be disabled.</span>
+                        <span><span className="font-semibold">Till 23:59 on October 23,</span> users can use their FiTan tokens to purchase gift cards. The leftover FiTan tokens will then all be disabled.</span>
                     </div>
                     <div className="h-3" />
                     <div className="flex flex-row">
@@ -160,7 +160,7 @@ function Home() {
                     <div className="h-6" />
                     <div className="h-[1px] w-full bg-[#EDECF3]" />
                     <div className="h-6" />
-                    <p className="text-xl font-medium">How to use FiThetan in Fizen Super App</p>
+                    <p className="text-xl font-medium">How to use FiTan in Fizen Super App</p>
                     <div className="h-6" />
                     <p className="font-semibold">How to get Order ID</p>
                     <div className="h-3" />
