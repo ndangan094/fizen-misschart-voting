@@ -134,7 +134,7 @@ function Home() {
                     <div className="h-3" />
                     <div className="flex flex-row">
                         <div className="px-2">•</div>
-                        <span>Get Order ID(s) and send order IDs to the official<span onClick={() => { window.open("https://t.me/fizen_io") }} className="text-[#5D5FEF] cursor-pointer"> Telegram</span> <span onClick={() => { window.open("https://fizen.io/") }} className="text-[#5D5FEF] cursor-pointer" >of</span> <span onClick={() => { window.open("https://fizen.io/") }} className="text-[#5D5FEF] cursor-pointer">Fizen.io</span>.</span>
+                        <span>Get Order ID(s) and send order IDs to the official<span onClick={() => { window.open("https://t.me/fizen_io") }} className="text-[#5D5FEF] cursor-pointer"> Telegram of Fizen.io</span> </span>
                     </div>
                 </div>
                 <div className="h-8" />
