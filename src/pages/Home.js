@@ -110,6 +110,16 @@ function Home() {
                     <div className="h-5" />
                     <span className=""><span className="font-semibold">Timeline:</span> 07/10 - 20/10</span>
                     <div className="h-3" />
+                    <div className="flex flex-row">
+                        <div className="px-2">-</div>
+                        <span>Event kick-off: 7/10</span>
+                    </div>
+                    <div className="h-3" />
+                    <div className="flex flex-row">
+                        <div className="px-2">-</div>
+                        <span>Claim FiTan Token: from 12/10</span>
+                    </div>
+                    <div className="h-3" />
                     <p className="text-base font-semibold">Rewards Structure:</p>
                     <div className="h-3" />
                     <div className="flex flex-row">
