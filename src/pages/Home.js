@@ -103,21 +103,21 @@ function Home() {
                 <div className="flex flex-col px-4">
                     <p className="pt-3">Fizen strives to become the leading super wallet app for GameFi by expanding its network with P2E projects and providing different services and experiences globally. A partner we work closely with is Thetan Arena, the world's first blockchain-based MOBA game. As part of this partnership, we will organize a Check-in campaign to distribute FiTan Tokens to Thetan gaming community.</p>
                     <span className="pt-3">
-                        Note: FiTan Token is an event-only token that Fizen.io issues to enable users to experience shopping with crypto through the Fizen wallet (gasless transaction). Using our Fizen Super App, FiTan can now be used to shop for <span className="font-semibold">21,000+ products</span> and services at <span className="font-semibold">2,500+ brands</span>  worldwide.
+                        Note: FiTan Token is an event-only token that Fizen.io issues to enable users to experience shopping with crypto through the Fizen wallet (gasless transaction). Using our Fizen Super App, FiTan can now be used to shop for <span className="font-semibold">25,000+ products</span> and services at <span className="font-semibold">3,000+ brands</span>  worldwide.
                     </span>
                     <div className="h-6" />
                     <p className="font-medium text-lg">How to join Fizen x Thetan Arena Amazing Check-in Race?</p>
                     <div className="h-5" />
-                    <span className=""><span className="font-semibold">Timeline:</span> 14/10 - 04/11</span>
+                    <span className=""><span className="font-semibold">Timeline:</span> 12/10 - 04/11</span>
                     <div className="h-3" />
                     <div className="flex flex-row">
                         <div className="px-2">-</div>
-                        <span>Event kick-off: 14/10</span>
+                        <span>Event kick-off: 12/10</span>
                     </div>
                     <div className="h-3" />
                     <div className="flex flex-row">
                         <div className="px-2">-</div>
-                        <span>Claim FiTan Token: 17/10 - 28/10</span>
+                        <span>Claim FiTan Token: 14/10 - 26/10</span>
                     </div>
                     <div className="h-3" />
                     <div className="flex flex-row">
