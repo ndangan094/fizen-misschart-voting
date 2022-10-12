@@ -108,38 +108,43 @@ function Home() {
                     <div className="h-6" />
                     <p className="font-medium text-lg">How to join Fizen x Thetan Arena Amazing Check-in Race?</p>
                     <div className="h-5" />
-                    <span className=""><span className="font-semibold">Timeline:</span> 07/10 - 20/10</span>
+                    <span className=""><span className="font-semibold">Timeline:</span> 14/10 - 04/11</span>
                     <div className="h-3" />
                     <div className="flex flex-row">
                         <div className="px-2">-</div>
-                        <span>Event kick-off: 7/10</span>
+                        <span>Event kick-off: 14/10</span>
                     </div>
                     <div className="h-3" />
                     <div className="flex flex-row">
                         <div className="px-2">-</div>
-                        <span>Claim FiTan Token: from 12/10</span>
+                        <span>Claim FiTan Token: 17/10 - 28/10</span>
+                    </div>
+                    <div className="h-3" />
+                    <div className="flex flex-row">
+                        <div className="px-2">-</div>
+                        <span>Token Spending Deadline: 31/10</span>
                     </div>
                     <div className="h-3" />
                     <p className="text-base font-semibold">Rewards Structure:</p>
                     <div className="h-3" />
                     <div className="flex flex-row">
                         <div className="px-2">•</div>
-                        <span>All users who check in 3 days in a row will receive $2.5 in FiTan Tokens.</span>
+                        <span>All users who check in 3 days in a row will receive $2.5 in FiTan Tokens. Rewarded tokens will be distributed to users at 7:00 AM UTC daily.</span>
                     </div>
                     <div className="h-3" />
                     <div className="flex flex-row">
                         <div className="px-2">•</div>
-                        <span><span className="font-semibold">Till 23:59 on October 23,</span> users can use their FiTan tokens to purchase gift cards. The leftover FiTan tokens will then all be disabled.</span>
+                        <span><span className="font-semibold">Till 23:59 on October 31,</span> users can use their FiTan tokens to purchase gift cards. The leftover FiTan tokens will then all be disabled.</span>
                     </div>
                     <div className="h-3" />
                     <div className="flex flex-row">
                         <div className="px-2">-</div>
-                        <span className="font-semibold">For iPhone 14 Lucky Draw:</span>
+                        <span className="font-semibold">For iPhone 14 Pro Max Deep Purple:</span>
                     </div>
                     <div className="h-3" />
                     <div className="flex flex-row">
                         <div className="px-2">•</div>
-                        <span>To have a chance at winning an iPhone 14 on <span className="font-semibold">October 25</span>, join the lucky draw program.</span>
+                        <span>To have a chance at winning an iPhone 14 on <span className="font-semibold">November 4</span>, join the lucky draw program.</span>
                     </div>
                     <div className="h-3" />
                     <div className="flex flex-row">
