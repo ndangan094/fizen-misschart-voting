@@ -176,11 +176,9 @@ function Home() {
                     <div className="h-[1px] w-full bg-[#EDECF3]" />
                     <div className="h-6" />
                     <p className="text-xl font-medium">How to use FiTan in Fizen Super App</p>
-                    <div className="h-6" />
-                    <p className="font-semibold">How to get Order ID</p>
                     <div className="h-3" />
                 </div>
-                <iframe className="h-[60vw]" src="https://www.youtube.com/embed/BkwYK0ti1FY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe className="h-[60vw]" src="https://www.youtube.com/embed/r_CpBUwuc-o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div className="flex flex-col px-4">
                     <div className="h-3" />
                     <p className="text-[#FF8C24]">It's time to push your luck! Jump in!</p>
