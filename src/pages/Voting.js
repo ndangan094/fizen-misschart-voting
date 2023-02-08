@@ -55,10 +55,10 @@ function Voting() {
                 <p className="font-medium text-lg text-white"></p>
                 <img onClick={() => { FiToken.postMessage(JSON.stringify({ type: "close" })) }} className="cursor-pointer" src="/assets/cancel.svg" alt="Cancel" />
             </div>
-            <div className="flex flex-row fixed">
+            <div className="flex flex-row fixed max-w-[500px]">
                 <img src="/assets/bg-2.png" />
             </div>
-            <div className="flex flex-col fixed items-center w-full h-screen">
+            <div className="flex flex-col fixed items-center w-full h-screen max-w-[500px]">
                 <div className="flex flex-col items-center w-full mx-4">
                     <div className="h-[40px]" />
                     <img className="w-[77px]" src="/assets/miss-charm-logo.png" />

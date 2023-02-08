@@ -13,10 +13,10 @@ function Home() {
                 <p className="font-medium text-lg text-white">Miss charm</p>
                 <img onClick={() => { FiToken.postMessage(JSON.stringify({ type: "close" })) }} className="cursor-pointer" src="/assets/cancel.svg" alt="Cancel" />
             </div>
-            <div className="flex flex-row fixed"> 
+            <div className="flex flex-row fixed max-w-[500px]"> 
                 <img  src="/assets/bg.png" />
             </div>
-            <div className="flex flex-col fixed items-center justify-center w-full">
+            <div className="flex flex-col fixed items-center justify-center w-full max-w-[500px]">
                 <div className="h-[190px]"/>
                 <img className="w-[123px]" src="/assets/miss-charm-logo.png" />
                 <div className="h-[40px]"/>
