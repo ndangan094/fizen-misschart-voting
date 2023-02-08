@@ -66,8 +66,8 @@ function Voting() {
                     <p className=" text-base text-center text-[#F8D181]">{"You will receive 1 Miss Fizen Vote (MFV)"}</p>
                     <p className=" text-base text-center text-[#F8D181]">{"token after submitting your wallet."}</p>
                     <div className="h-[40px]" />
-                    <img className="w-[160px]" src="/assets/logo-token.png" />
-                    <div className="h-[40px]" />
+                    <img className="w-[190px]" src="/assets/logo-token.png" />
+                    <div className="h-[40px]" /> 
                     <p className=" text-base text-center text-[#F8D181]">{"Distribution time: Before the Swimsuit"}</p>
                     <p className=" text-base text-center text-[#F8D181]">{"show by Fizen at 5 PM, February 9th"}</p>
                     <div className="h-[30px]" />
