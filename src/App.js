@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter> 
     <Routes>
       <Route path="/" element={<Home />}/>
-      <Route path="/airdrop" element={<Voting />}/>
+      <Route path="/voting" element={<Voting />}/>
     </Routes>
   </BrowserRouter>
   );
