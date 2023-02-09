@@ -33,8 +33,11 @@ function Voting() {
                     isSubmit = false;
                     if (response.data.success) {
                         toast.update(id, { render: "Submit address completed. You will be notified once you receive token", type: "success", isLoading: false, autoClose: 3000, hideProgressBar: true, theme: "colored",position: "top-center", });
-                    } else if (response.data.success == false && response.data.reason == "MISSCHARM.WHITELIST_ADDRESS.PASS.DUPLICATE") {
+                    } else if (response.data.success == false && response.data.reason == "MISSCHARM.WHITELIST_ADDRESS.ADDRESS.DUPLICATE") {
                         toast.update(id, { render: "Submit address failed. You have already submitted address", type: "error", isLoading: false, autoClose: 3000, hideProgressBar: true, theme: "colored", position: "top-center",});
+
+                    }else if (response.data.success == false && response.data.reason == "MISSCHARM.WHITELIST_ADDRESS.DEVICE.DUPLICATE") {
+                        toast.update(id, { render: "Submit address failed. You have already submitted on this device", type: "error", isLoading: false, autoClose: 3000, hideProgressBar: true, theme: "colored", position: "top-center",});
 
                     } else {
                         toast.update(id, { render: "Submit address failed. Please try again later", type: "error", isLoading: false, autoClose: 3000, hideProgressBar: true, theme: "colored", position: "top-center",});
