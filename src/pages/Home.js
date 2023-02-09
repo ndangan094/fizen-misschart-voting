@@ -7,13 +7,13 @@ function Home() {
 
     const claim = query.get("claim");
     return (
-        <div className="flex flex-col relative max-w-[500px] select-none mx-auto h-screen">
+        <div className="flex flex-col relative max-w-[500px] select-none mx-auto ">
             <div className="flex flex-row fixed top-0 max-w-[500px] w-full justify-between py-4 px-4 z-10">
                 <div className=" w-6" />
                 <p className="font-medium text-lg text-white">Miss charm</p>
                 <img onClick={() => { FiToken.postMessage(JSON.stringify({ type: "close" })) }} className="cursor-pointer" src="/assets/cancel.svg" alt="Cancel" />
             </div>
-            <div className="flex flex-row fixed max-w-[500px] h-screen "> 
+            <div className="flex flex-row fixed max-w-[500px]"> 
                 <img  src="/assets/bg.png" />
             </div>
             <div className="flex flex-col fixed items-center justify-center w-full max-w-[500px]">
