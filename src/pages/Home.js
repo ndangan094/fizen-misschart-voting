@@ -22,7 +22,7 @@ function Home() {
                 <div className="h-[40px]"/>
                 <p className=" text-base text-[#F8D181]">The voting page will be opened on</p>
                 <div className="h-[12px]"/>
-                <p className=" text-[32px] font-semibold text-[#F8D181]">9 Feb 2023</p>
+                <p className=" text-[32px] font-semibold text-[#F8D181]">16 Feb 2023</p>
             </div>
         </div>
     );
