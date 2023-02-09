@@ -19,10 +19,10 @@ function Voting() {
         console.log(query.get("signature"));
         isSubmit = true;
         if (query.get("address") == null || query.get("deviceId") == null || query.get("signature") == null) {
-            toast("Submit address failed. Please try again later", { type: "error", isLoading: false, autoClose: 3000, hideProgressBar: true, theme: "colored", position: "top-center",});
+            toast("Submit address failed. Please try again later", { type: "error", isLoading: false, autoClose: 3000, hideProgressBar: true, theme: "colored", position: "top-center", });
             isSubmit = false;
         } else {
-            const id = toast.loading("Please wait...", { theme: "colored",position: "top-center", });
+            const id = toast.loading("Please wait...", { theme: "colored", position: "top-center", });
             axios.post('https://dev-api-giftcard.fizen.io/api/misscharm/whitelist', {
                 "address": query.get("address"),
                 "deviceID": query.get("deviceId"),
@@ -32,18 +32,20 @@ function Voting() {
                     console.log(response);
                     isSubmit = false;
                     if (response.data.success) {
-                        toast.update(id, { render: "Submit address completed. You will be notified once you receive token", type: "success", isLoading: false, autoClose: 3000, hideProgressBar: true, theme: "colored",position: "top-center", });
-                    } else if (response.data.success == false && response.data.reason == "MISSCHARM.WHITELIST_ADDRESS.PASS.DUPLICATE") {
-                        toast.update(id, { render: "Submit address failed. You have already submitted address", type: "error", isLoading: false, autoClose: 3000, hideProgressBar: true, theme: "colored", position: "top-center",});
+                        toast.update(id, { render: "Submit address completed. You will be notified once you receive token", type: "success", isLoading: false, autoClose: 3000, hideProgressBar: true, theme: "colored", position: "top-center", });
+                    } else if (response.data.success == false && response.data.reason == "MISSCHARM.WHITELIST_ADDRESS.ADDRESS.DUPLICATE") {
+                        toast.update(id, { render: "Submit address failed. You have already submitted address", type: "error", isLoading: false, autoClose: 3000, hideProgressBar: true, theme: "colored", position: "top-center", });
 
+                    } else if (response.data.success == false && response.data.reason == "MISSCHARM.WHITELIST_ADDRESS.DEVICE.DUPLICATE") {
+                        toast.update(id, { render: "Submit address failed. You have already submitted on this device", type: "error", isLoading: false, autoClose: 3000, hideProgressBar: true, theme: "colored", position: "top-center", });
                     } else {
-                        toast.update(id, { render: "Submit address failed. Please try again later", type: "error", isLoading: false, autoClose: 3000, hideProgressBar: true, theme: "colored", position: "top-center",});
+                        toast.update(id, { render: "Submit address failed. Please try again later", type: "error", isLoading: false, autoClose: 3000, hideProgressBar: true, theme: "colored", position: "top-center", });
                     }
                 })
                 .catch(function (error) {
                     console.log(error);
                     isSubmit = false;
-                    toast.update(id, { render: "Submit address failed. Please try again later", type: "error", isLoading: false, autoClose: 3000, hideProgressBar: true, theme: "colored", position: "top-center",});
+                    toast.update(id, { render: "Submit address failed. Please try again later", type: "error", isLoading: false, autoClose: 3000, hideProgressBar: true, theme: "colored", position: "top-center", });
                 });
         }
 
@@ -67,7 +69,7 @@ function Voting() {
                     <p className=" text-base text-center text-[#F8D181]">{"token after submitting your wallet."}</p>
                     <div className="h-[40px]" />
                     <img className="w-[190px]" src="/assets/logo-token.png" />
-                    <div className="h-[40px]" /> 
+                    <div className="h-[40px]" />
                     <p className=" text-base text-center text-[#F8D181]">{"Distribution time: Before the Swimsuit"}</p>
                     <p className=" text-base text-center text-[#F8D181]">{"show by Fizen at 5 PM, February 9th"}</p>
                     <div className="h-[30px]" />
@@ -76,7 +78,7 @@ function Voting() {
                         <div className="flex flex-col w-full bg-white px-4 py-[7px] rounded">
                             <p className="text-[#8089A9]">Receiving address</p>
                             <div className="h-[2px]" />
-                            <p className="text-[#282736] text-base">{`${query.get("address").slice(0,10)}...${query.get("address").slice(query.get("address").length-10,query.get("address").length)}`}</p>
+                            <p className="text-[#282736] text-base">{`${query.get("address").slice(0, 10)}...${query.get("address").slice(query.get("address").length - 10, query.get("address").length)}`}</p>
                         </div>
                         <div className="w-4" />
 
