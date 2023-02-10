@@ -65,8 +65,8 @@ function Voting() {
                     <div className="h-[40px]" />
                     <img className="w-[77px]" src="/assets/miss-charm-logo.png" />
                     <div className="h-[24px]" />
-                    <p className=" text-base text-center text-[#F8D181]">{"You will receive 1 Miss Fizen Vote (MFV)"}</p>
-                    <p className=" text-base text-center text-[#F8D181]">{"token after submitting your wallet."}</p>
+                    <p className=" text-base text-center text-[#F8D181]">{"You will receive 1 MBC token"}</p>
+                    <p className=" text-base text-center text-[#F8D181]">{"after submitting your wallet."}</p>
                     <div className="h-[40px]" />
                     <img className="w-[190px]" src="https://fizen-assets.s3.ap-southeast-1.amazonaws.com/giftcard/images/misscharm-erc20-token.png" />
                     <div className="h-[60px]" />
