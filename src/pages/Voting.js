@@ -65,14 +65,14 @@ function Voting() {
                     <div className="h-[40px]" />
                     <img className="w-[77px]" src="/assets/miss-charm-logo.png" />
                     <div className="h-[24px]" />
-                    <p className=" text-base text-center text-[#F8D181]">{"You will receive 1 Miss Fizen Vote (MFV)"}</p>
-                    <p className=" text-base text-center text-[#F8D181]">{"token after submitting your wallet."}</p>
+                    <p className=" text-base text-center text-[#F8D181]">{"You will receive 1 MBC token"}</p>
+                    <p className=" text-base text-center text-[#F8D181]">{"after submitting your wallet."}</p>
                     <div className="h-[40px]" />
-                    <img className="w-[190px]" src="/assets/logo-token.png" />
-                    <div className="h-[40px]" />
-                    <p className=" text-base text-center text-[#F8D181]">{"Distribution time: Before the Swimsuit"}</p>
+                    <img className="w-[190px]" src="https://fizen-assets.s3.ap-southeast-1.amazonaws.com/giftcard/images/misscharm-erc20-token.png" />
+                    <div className="h-[60px]" />
+                    {/* <p className=" text-base text-center text-[#F8D181]">{"Distribution time: Before the Swimsuit"}</p>
                     <p className=" text-base text-center text-[#F8D181]">{"show by Fizen at 5 PM, February 9th"}</p>
-                    <div className="h-[30px]" />
+                    <div className="h-[30px]" /> */}
                     <div className="flex flex-row w-full">
                         <div className="w-4" />
                         <div className="flex flex-col w-full bg-white px-4 py-[7px] rounded">
