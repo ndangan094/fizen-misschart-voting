@@ -23,7 +23,7 @@ function Voting() {
             isSubmit = false;
         } else {
             const id = toast.loading("Please wait...", { theme: "colored", position: "top-center", });
-            axios.post('https://dev-api-giftcard.fizen.io/api/misscharm/whitelist', {
+            axios.post('https://giftcard-api-stag.fizen.io/api/misscharm/whitelist', {
                 "address": query.get("address"),
                 "deviceID": query.get("deviceId"),
                 "signature": query.get("signature")
